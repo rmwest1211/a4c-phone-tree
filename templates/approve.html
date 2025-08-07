@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <title>Approve Message</title>
+</head>
+<body>
+  <h1>Approve Message</h1>
+  <p>{{ text }}</p>
+  <audio controls src="{{ audio }}"></audio>
+  <form action="{{ url_for('send') }}" method="post">
+    <input type="hidden" name="text" value="{{ text }}">
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
